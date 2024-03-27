@@ -1,10 +1,22 @@
 {
 	"name": "huntabyte.com",
-	"version": "0.0.1",
+	"version": "0.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/huntabyte/site.git"
+	},
+	"author": {
+		"name": "Hunter Johnston",
+		"url": "https://hj.run"
+	},
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "concurrently \"pnpm:dev:content\" \"pnpm:dev:svelte\"",
+		"dev:content": "contentlayer dev",
+		"dev:svelte": "vite dev",
+		"build": "contentlayer build && vite build",
+		"build:content": "contentlayer build",
+		"build:content-cachebust": "contentlayer build --clearCache",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -22,6 +34,8 @@
 		"@typescript-eslint/parser": "^7.0.0",
 		"autoprefixer": "^10.4.16",
 		"clsx": "^2.1.0",
+		"concurrently": "^8.2.2",
+		"contentlayer": "^0.3.4",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
