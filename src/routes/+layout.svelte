@@ -3,6 +3,7 @@
 	import '$lib/styles/markdown.pcss';
 	import * as Icon from '$lib/icons/index.js';
 	import type { ComponentType } from 'svelte';
+	import { dev } from '$app/environment';
 
 	type Social = {
 		name: string;
@@ -40,9 +41,11 @@
 	<nav class="flex items-center justify-between">
 		<a href="/" class="py-6 text-xl font-bold"> HJ </a>
 		<div class="flex items-center gap-5">
-			{#each navigation as navItem}
-				<a href={navItem.href} class="hover:text-orange-400">{navItem.name}</a>
-			{/each}
+			{#if dev}
+				{#each navigation as navItem}
+					<a href={navItem.href} class="hover:text-orange-400">{navItem.name}</a>
+				{/each}
+			{/if}
 		</div>
 	</nav>
 	<main class="py-10">
