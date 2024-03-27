@@ -1,8 +1,8 @@
 import type { PageLoad } from './$types.js';
-import { getDoc } from '$lib/utils/posts.js';
+import { getContent } from '$lib/utils/posts.js';
 
 export const load: PageLoad = async (event) => {
-	const { component, title, metadata } = await getDoc(event.params.slug);
+	const { component, title, metadata } = await getContent(event.params.slug, 'posts');
 	return {
 		component,
 		title,

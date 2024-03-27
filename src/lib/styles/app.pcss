@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	* {
+		@apply border-neutral-700;
+	}
+	html {
+		-webkit-text-size-adjust: 100%;
+		font-variation-settings: normal;
+	}
+	body {
+		@apply bg-neutral-900 text-neutral-50;
+		font-feature-settings:
+			'rlig' 1,
+			'calt' 1;
+	}
+}

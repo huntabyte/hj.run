@@ -27,9 +27,6 @@ type Modules = Record<string, () => Promise<unknown>>;
 function findMatch(slug: string, modules: Modules) {
 	let match: { path?: string; resolver?: DocResolver } = {};
 
-	console.log(slug);
-	console.log(modules);
-
 	for (const [path, resolver] of Object.entries(modules)) {
 		console.log(slugFromPath(path));
 		if (slugFromPath(path) === slug) {
@@ -57,9 +54,11 @@ function getIndexDocIfExists(slug: string, modules: Modules) {
 	return match;
 }
 
-export async function getDoc(slug: string): Promise<PostDoc> {
+export type ContentType = 'posts' | 'notes' | 'snippets';
+
+export async function getContent(slug: string, type: ContentType): Promise<PostDoc> {
 	const modules = import.meta.glob(`/content/**/*.md`);
-	const match = findMatch(slug, modules);
+	const match = findMatch(`${type}/${slug}`, modules);
 	const doc = await match?.resolver?.();
 
 	if (!doc || !doc.metadata) {
