@@ -31,7 +31,7 @@
 
 	const navigation = [
 		{ name: 'Projects', href: '/projects' },
-		{ name: 'Writing', href: '/writing' },
+		{ name: 'Writing', href: '/posts' },
 		{ name: 'Uses', href: '/uses' },
 		{ name: 'Contact', href: '/contact' }
 	];
