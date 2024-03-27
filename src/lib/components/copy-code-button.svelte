@@ -9,7 +9,7 @@
 
 <button
 	class={cn(
-		'bg-background hover:bg-muted relative z-20 inline-flex h-6 w-6 items-center justify-center rounded-md border text-sm font-medium transition-all focus:outline-none',
+		'hover:bg-muted relative z-20 inline-flex size-6 items-center justify-center rounded-md border bg-neutral-900 text-sm font-medium transition-all focus:outline-none',
 		className
 	)}
 	on:click={copyCode}
