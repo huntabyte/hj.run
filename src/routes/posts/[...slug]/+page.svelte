@@ -2,6 +2,6 @@
 	export let data;
 </script>
 
-<article class="prose prose-invert md:prose-lg prose-headings:font-medium prose-h1:text-4xl">
+<article class="markdown">
 	<svelte:component this={data.component} />
 </article>
