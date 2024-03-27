@@ -31,13 +31,13 @@
 
 	const navigation = [
 		{ name: 'Projects', href: '/projects' },
-		{ name: 'Posts', href: '/posts' },
+		{ name: 'Writing', href: '/writing' },
 		{ name: 'Uses', href: '/uses' },
 		{ name: 'Contact', href: '/contact' }
 	];
 </script>
 
-<div class="mx-auto flex min-h-screen max-w-3xl flex-col px-4 md:px-0">
+<div class="mx-auto flex min-h-screen flex-col px-4 md:px-0">
 	<nav class="flex items-center justify-between">
 		<a href="/" class="py-6 text-xl font-bold"> HJ </a>
 		<div class="flex items-center gap-5">
@@ -51,8 +51,9 @@
 	<main class="py-10">
 		<slot />
 	</main>
-	<footer class="mx-auto mt-auto py-6 text-center">
-		<div class="mt-8 flex items-center gap-1">
+	<footer class="mx-auto mt-auto flex w-full items-center justify-between py-4">
+		<span class="text-xs">Copyright © 2024 Hunter Johnston</span>
+		<div class="flex items-center gap-1">
 			{#each socials as social}
 				<a
 					href={social.href}

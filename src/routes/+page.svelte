@@ -1,7 +1,9 @@
 <script lang="ts">
 </script>
 
-<section class="prose prose-neutral prose-invert mt-4 prose-a:underline-offset-4">
+<section
+	class="prose-a:decoration prose prose-neutral prose-invert mt-4 md:prose-lg prose-a:underline prose-a:decoration-neutral-400 prose-a:underline-offset-4"
+>
 	<h1 class="not-prose text-4xl text-neutral-50">I'm Hunter, aka Huntabyte.</h1>
 	<p>
 		I've been working professionally in tech for almost 10 years and have been passionate about it
