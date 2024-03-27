@@ -1,9 +1,8 @@
 <script lang="ts">
 </script>
 
-<h1 class="text-3xl">I'm Hunter, aka Huntabyte.</h1>
-
-<div class="prose prose-invert mt-4">
+<section class="prose prose-lg prose-neutral prose-invert mt-4 prose-a:underline-offset-4">
+	<h1 class="not-prose text-4xl text-neutral-50">I'm Hunter, aka Huntabyte.</h1>
 	<p>
 		I've been working professionally in tech for almost 10 years and have been passionate about it
 		for as long as I can remember.
@@ -35,4 +34,4 @@
 			<a href="https://paneforge.com" target="_blank"> PaneForge </a>
 		</li>
 	</ul>
-</div>
+</section>
