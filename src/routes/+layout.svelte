@@ -1,5 +1,6 @@
 <script lang="ts">
-	import '../app.pcss';
+	import '$lib/styles/app.pcss';
+	import '$lib/styles/markdown.pcss';
 	import * as Icon from '$lib/icons/index.js';
 	import type { ComponentType } from 'svelte';
 
