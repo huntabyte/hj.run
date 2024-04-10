@@ -38,4 +38,9 @@
 		. I'm hoping that having this site will encourage me to share more
 		<a href="/articles">written</a> content as well.
 	</p>
+	<p>
+		When I'm not doing things on the internet, I enjoy spending time with my beautiful fiancée and
+		our two dogs. We love trying out new breakfast spots, especially if they have good brew
+		(coffee).
+	</p>
 </section>
