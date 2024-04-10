@@ -4,7 +4,7 @@
 
 	export let title: string = siteConfig.name;
 
-	$: title = $page.data?.title ? `${$page.data.title} - ${siteConfig.name}` : siteConfig.name;
+	$: title = $page.data?.title ? `${$page.data.title}` : siteConfig.name;
 	$: description = $page.data?.description ?? siteConfig.description;
 </script>
 
