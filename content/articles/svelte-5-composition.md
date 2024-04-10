@@ -1,6 +1,6 @@
 ---
-title: Hello World
-date: 2024-03-24
+title: Svelte 5 Composition
+date: 2024-04-02
 ---
 
 # Heading 1

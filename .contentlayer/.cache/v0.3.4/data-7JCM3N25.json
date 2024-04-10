@@ -23,9 +23,35 @@
         "fileName": "hello-world",
         "suffix": ".md"
       },
-      "documentHash": "1712716069518",
+      "documentHash": "1712716167667",
       "hasWarnings": false,
       "documentTypeName": "Article"
+    },
+    "notes/seeding-supabase-users.md": {
+      "document": {
+        "title": "Seeding Supabase Users",
+        "date": "2024-04-09",
+        "body": {
+          "raw": "\nDuring a recent project, I had to seed a local Supabase instance with a bunch of users. I hadn't done this before, but it turned out to be quite simple. Just update your `seed.sql` file with the following:\n\n```sql\n-- Create 10 users\nINSERT INTO\n    auth.users (\n        instance_id,\n        id,\n        aud,\n        role,\n        email,\n        encrypted_password,\n        email_confirmed_at,\n        recovery_sent_at,\n        last_sign_in_at,\n        raw_app_meta_data,\n        raw_user_meta_data,\n        created_at,\n        updated_at,\n        confirmation_token,\n        email_change,\n        email_change_token_new,\n        recovery_token\n    ) (\n        select\n            '00000000-0000-0000-0000-000000000000',\n            uuid_generate_v4 (),\n            'authenticated',\n            'authenticated',\n            'user' || (ROW_NUMBER() OVER ()) || '@example.com',\n            crypt ('password123', gen_salt ('bf')),\n            current_timestamp,\n            current_timestamp,\n            current_timestamp,\n            '{\"provider\":\"email\",\"providers\":[\"email\"]}',\n            '{}',\n            current_timestamp,\n            current_timestamp,\n            '',\n            '',\n            '',\n            ''\n        FROM\n            generate_series(1, 10)\n    );\n\n-- Create 10 identities, one for each user\nINSERT INTO\n    auth.identities (\n        id,\n        user_id,\n        -- New column\n        provider_id,\n        identity_data,\n        provider,\n        last_sign_in_at,\n        created_at,\n        updated_at\n    ) (\n        select\n            uuid_generate_v4 (),\n            id,\n            -- New column\n            id,\n            format('{\"sub\":\"%s\",\"email\":\"%s\"}', id :: text, email) :: jsonb,\n            'email',\n            current_timestamp,\n            current_timestamp,\n            current_timestamp\n        from\n            auth.users\n    );\n```\n\nThis script will create 10 users with the email `user<number>@example.com` and password `password123`. You can adjust the number of users by changing the `generate_series` argument.\n",
+          "html": "<p>During a recent project, I had to seed a local Supabase instance with a bunch of users. I hadn't done this before, but it turned out to be quite simple. Just update your <code>seed.sql</code> file with the following:</p>\n<pre><code class=\"language-sql\">-- Create 10 users\nINSERT INTO\n    auth.users (\n        instance_id,\n        id,\n        aud,\n        role,\n        email,\n        encrypted_password,\n        email_confirmed_at,\n        recovery_sent_at,\n        last_sign_in_at,\n        raw_app_meta_data,\n        raw_user_meta_data,\n        created_at,\n        updated_at,\n        confirmation_token,\n        email_change,\n        email_change_token_new,\n        recovery_token\n    ) (\n        select\n            '00000000-0000-0000-0000-000000000000',\n            uuid_generate_v4 (),\n            'authenticated',\n            'authenticated',\n            'user' || (ROW_NUMBER() OVER ()) || '@example.com',\n            crypt ('password123', gen_salt ('bf')),\n            current_timestamp,\n            current_timestamp,\n            current_timestamp,\n            '{\"provider\":\"email\",\"providers\":[\"email\"]}',\n            '{}',\n            current_timestamp,\n            current_timestamp,\n            '',\n            '',\n            '',\n            ''\n        FROM\n            generate_series(1, 10)\n    );\n\n-- Create 10 identities, one for each user\nINSERT INTO\n    auth.identities (\n        id,\n        user_id,\n        -- New column\n        provider_id,\n        identity_data,\n        provider,\n        last_sign_in_at,\n        created_at,\n        updated_at\n    ) (\n        select\n            uuid_generate_v4 (),\n            id,\n            -- New column\n            id,\n            format('{\"sub\":\"%s\",\"email\":\"%s\"}', id :: text, email) :: jsonb,\n            'email',\n            current_timestamp,\n            current_timestamp,\n            current_timestamp\n        from\n            auth.users\n    );\n</code></pre>\n<p>This script will create 10 users with the email <code>user&#x3C;number>@example.com</code> and password <code>password123</code>. You can adjust the number of users by changing the <code>generate_series</code> argument.</p>"
+        },
+        "_id": "notes/seeding-supabase-users.md",
+        "_raw": {
+          "sourceFilePath": "notes/seeding-supabase-users.md",
+          "sourceFileName": "seeding-supabase-users.md",
+          "sourceFileDir": "notes",
+          "contentType": "markdown",
+          "flattenedPath": "notes/seeding-supabase-users"
+        },
+        "type": "Note",
+        "slug": "seeding-supabase-users",
+        "slugFull": "/notes/seeding-supabase-users",
+        "fileName": "seeding-supabase-users",
+        "suffix": ".md"
+      },
+      "documentHash": "1712716612251",
+      "hasWarnings": false,
+      "documentTypeName": "Note"
     }
   }
 }

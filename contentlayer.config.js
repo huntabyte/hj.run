@@ -29,10 +29,6 @@ export const Article = defineDocumentType(() => ({
 			type: 'string',
 			required: true
 		},
-		excerpt: {
-			type: 'string',
-			required: true
-		},
 		date: {
 			type: 'string',
 			required: true

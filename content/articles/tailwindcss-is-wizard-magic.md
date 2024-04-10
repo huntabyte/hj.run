@@ -1,6 +1,6 @@
 ---
-title: Hello World
-date: 2024-03-24
+title: TailwindCSS is Wizard Magic
+date: 2024-03-30
 ---
 
 # Heading 1

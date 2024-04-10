@@ -27,10 +27,6 @@ var Article = defineDocumentType(() => ({
       type: "string",
       required: true
     },
-    excerpt: {
-      type: "string",
-      required: true
-    },
     date: {
       type: "string",
       required: true
@@ -63,4 +59,4 @@ export {
   Note,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-7JCM3N25.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-YIOAABWL.mjs.map

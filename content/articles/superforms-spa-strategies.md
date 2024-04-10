@@ -1,6 +1,6 @@
 ---
-title: Hello World
-date: 2024-03-24
+title: Superforms SPA Strategies
+date: 2024-04-05
 ---
 
 # Heading 1

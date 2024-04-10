@@ -14,7 +14,6 @@ export type Article = {
   _raw: Local.RawDocumentData
   type: 'Article'
   title: string
-  excerpt: string
   date: string
   /** Markdown file body */
   body: Markdown

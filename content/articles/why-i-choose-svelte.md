@@ -1,6 +1,6 @@
 ---
-title: Hello World
-date: 2024-03-24
+title: Why I Choose Svelte
+date: 2024-04-01
 ---
 
 # Heading 1

@@ -43,7 +43,7 @@
 		<div class="flex items-center gap-5 text-sm uppercase tracking-wide">
 			{#if dev}
 				{#each navigation as navItem}
-					<a href={navItem.href} class="font-medium text-stone-950">{navItem.name}</a>
+					<a href={navItem.href} class="font-semibold text-stone-950">{navItem.name}</a>
 				{/each}
 			{/if}
 		</div>

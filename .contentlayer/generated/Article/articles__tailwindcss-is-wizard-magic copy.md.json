@@ -5,17 +5,17 @@
     "raw": "\n# Heading 1\n\n## Heading 2\n\n### Heading 3\n\n#### Heading 4\n\n##### Heading 5\n\nThis is my first post. I want to write more.\n\n```svelte\n<script lang=\"ts\">\n\tconsole.log('hello world!');\n</script>\n```\n",
     "html": "<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3>\n<h4>Heading 4</h4>\n<h5>Heading 5</h5>\n<p>This is my first post. I want to write more.</p>\n<pre><code class=\"language-svelte\">&#x3C;script lang=\"ts\">\n\tconsole.log('hello world!');\n&#x3C;/script>\n</code></pre>"
   },
-  "_id": "articles/hello-world.md",
+  "_id": "articles/tailwindcss-is-wizard-magic copy.md",
   "_raw": {
-    "sourceFilePath": "articles/hello-world.md",
-    "sourceFileName": "hello-world.md",
+    "sourceFilePath": "articles/tailwindcss-is-wizard-magic copy.md",
+    "sourceFileName": "tailwindcss-is-wizard-magic copy.md",
     "sourceFileDir": "articles",
     "contentType": "markdown",
-    "flattenedPath": "articles/hello-world"
+    "flattenedPath": "articles/tailwindcss-is-wizard-magic copy"
   },
   "type": "Article",
-  "slug": "hello-world",
-  "slugFull": "/articles/hello-world",
-  "fileName": "hello-world",
+  "slug": "tailwindcss-is-wizard-magic copy",
+  "slugFull": "/articles/tailwindcss-is-wizard-magic copy",
+  "fileName": "tailwindcss-is-wizard-magic copy",
   "suffix": ".md"
 }

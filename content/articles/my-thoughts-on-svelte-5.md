@@ -1,6 +1,6 @@
 ---
-title: Hello World
-date: 2024-03-24
+title: My Thoughts on Svelte 5
+date: 2024-04-09
 ---
 
 # Heading 1
