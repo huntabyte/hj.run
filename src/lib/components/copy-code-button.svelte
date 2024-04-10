@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { cn } from '$lib/utils/index.js';
-	import { CopySimple, Check } from '$lib/icons/index.js';
+	import { Check, CopySimple } from '$lib/icons/index.js';
 	let className: string | undefined | null = undefined;
 	export let copyCode: () => void;
 	export let copied = false;
@@ -9,7 +9,7 @@
 
 <button
 	class={cn(
-		'hover:bg-muted relative z-20 inline-flex size-6 items-center justify-center rounded-md border bg-neutral-900 text-sm font-medium transition-all focus:outline-none',
+		'hover:bg-muted relative z-20 inline-flex size-6 items-center justify-center rounded-md border border-stone-400 bg-stone-50 text-sm font-medium transition-all focus:outline-none',
 		className
 	)}
 	on:click={copyCode}

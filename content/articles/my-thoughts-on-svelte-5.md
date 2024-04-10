@@ -21,7 +21,7 @@ This is my first post. I want to write more.
 </script>
 ```
 
-```ts showLineNumbers {2}
+```ts {2}
 function createSomethingCool() {
 	console.log('hello world!');
 }

@@ -3,7 +3,7 @@ title: Seeding Supabase Users
 date: 2024-04-09
 ---
 
-During a recent project, I had to seed a local Supabase instance with a bunch of users. I hadn't done this before, but it turned out to be quite simple. Just update your `seed.sql` file with the following:
+During a recent project, I needed to seed a local Supabase instance with a bunch of users. I hadn't done this before, but it turned out to be quite simple. Just update your `seed.sql` file with the following:
 
 ```sql
 -- Create 10 users
