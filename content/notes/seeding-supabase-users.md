@@ -27,7 +27,7 @@ INSERT INTO
         email_change_token_new,
         recovery_token
     ) (
-        select
+        SELECT
             '00000000-0000-0000-0000-000000000000',
             uuid_generate_v4 (),
             'authenticated',
@@ -62,7 +62,7 @@ INSERT INTO
         created_at,
         updated_at
     ) (
-        select
+        SELECT
             uuid_generate_v4 (),
             id,
             -- New column
@@ -72,7 +72,7 @@ INSERT INTO
             current_timestamp,
             current_timestamp,
             current_timestamp
-        from
+        FROM
             auth.users
     );
 ```
