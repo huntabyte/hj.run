@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { ComponentType } from 'svelte';
-	import { dev } from '$app/environment';
 	import * as Icon from '$lib/icons/index.js';
 	import '$lib/styles/app.pcss';
 	import '$lib/styles/markdown.pcss';
@@ -41,11 +40,9 @@
 	<nav class="flex items-center justify-between">
 		<a href="/" class="py-6 text-xl font-bold"> HJ </a>
 		<div class="flex items-center gap-5 text-sm uppercase tracking-wide">
-			{#if dev}
-				{#each navigation as navItem}
-					<a href={navItem.href} class="font-semibold text-stone-950">{navItem.name}</a>
-				{/each}
-			{/if}
+			{#each navigation as navItem}
+				<a href={navItem.href} class="font-semibold text-stone-950">{navItem.name}</a>
+			{/each}
 		</div>
 	</nav>
 	<main class="py-10">
