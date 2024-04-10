@@ -3,7 +3,9 @@ title: Tailwind Wins the Component Era
 date: 2024-04-09
 ---
 
-Ah, [TailwindCSS](https://tailwindcss.com) - the most controversial CSS framework of the decade for reasons unknown to me. I've never passionately hated something I didn't have to use. I just looked at the thing and thought, "Huh, that's interesting but not for me," and moved on like a normal person. But I digress. Let's talk about one of the reasons Tailwind is winning the component era and why you should give it a shot if you're on the fence about it.
+Ah, [TailwindCSS](https://tailwindcss.com) - the most controversial CSS framework of the decade for reasons unknown to me. I've never passionately hated something I didn't have to use. I just looked at the thing and thought, "Huh, that's interesting but not for me," and moved on like a normal person. But I digress.
+
+Let's talk about one of the reasons Tailwind is winning the component era and why you should give it a shot if you're on the fence about it.
 
 ## Shortcomings of Scoped Styles
 
@@ -67,11 +69,11 @@ But now you've lost the benefits of scoped styles. You're back to square one. Th
 
 What if, instead of passing 600 predefined props to a generic component, you could override the styles you need with a few classes, each overriding a specific style? That's what Tailwind can do for you and why it's winning the component era.
 
-Now, Tailwind doesn't get _all_ the credit for this, as some incredible libraries have come along to make overriding and merging Tailwind classes a breeze, but it's the "Catalyst" for this change ;).
+Now, Tailwind doesn't get _all_ the credit for this, as some incredible libraries have come along to make overriding and merging Tailwind classes a breeze, but it's the "[Catalyst](https://catalyst.tailwindui.com/)" for this change ;).
 
 ### The Tailwind Way
 
-If the library you're using uses Tailwind, they can use some of the awesome libraries like [clsx](/), [cva](/), [tailwindMerge](/), or [tailwind-variants](/) to ensure you can override any of their default styles with ease.
+If the library you're using uses Tailwind, they can use some of the awesome libraries like [clsx](https://github.com/lukeed/clsx), [cva](https://cva.style), [tailwindMerge](https://github.com/dcastil/tailwind-merge), or [tailwind-variants](https://tailwind-variants.org) to ensure you can override any of their default styles with ease.
 
 Here's an example of how that `<Button>` might look under the hood:
 
