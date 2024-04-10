@@ -3,6 +3,7 @@
 	import * as Icon from '$lib/icons/index.js';
 	import '$lib/styles/app.pcss';
 	import '$lib/styles/markdown.pcss';
+	import { Metadata } from '$lib/components';
 
 	type Social = {
 		name: string;
@@ -35,6 +36,8 @@
 		{ name: 'Contact', href: '/contact' }
 	];
 </script>
+
+<Metadata />
 
 <div class="mx-auto flex min-h-screen flex-col">
 	<nav class="flex items-center justify-between py-6">
