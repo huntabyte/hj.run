@@ -16,7 +16,7 @@
 }
 
 [data-rehype-pretty-code-figure] [data-line-numbers] > [data-line]::before {
-	@apply text-xs text-neutral-200;
+	@apply text-xs text-stone-800;
 	counter-increment: line;
 	content: counter(line);
 	display: inline-block;
@@ -33,7 +33,7 @@
 	@apply relative;
 
 	& pre {
-		@apply mb-4 mt-6 overflow-x-auto rounded-lg border border-neutral-700 bg-[#f1f1f1] py-4 text-sm font-medium;
+		@apply mb-4 mt-6 overflow-x-auto rounded-lg border border-stone-800/20 bg-stone-100/90 py-4 text-sm font-medium;
 	}
 
 	& code {
@@ -51,7 +51,7 @@
 	}
 
 	& [data-highlighted-line] {
-		@apply z-10 w-full border-l-neutral-50 bg-neutral-50/5;
+		@apply z-10 w-full border-l-stone-950 bg-stone-800/5;
 	}
 
 	& [data-highlighted-line][data-highlighted-line-id='add'] {
@@ -68,7 +68,7 @@
 }
 
 [data-rehype-pretty-code-title] {
-	@apply mt-6 flex rounded-t-lg border-l border-r border-t border-neutral-700 bg-neutral-700 px-4 py-3 text-sm text-neutral-200;
+	@apply mt-6 flex rounded-t-lg border-l border-r border-t border-stone-700 bg-stone-700 px-4 py-3 text-sm text-stone-200;
 }
 
 [data-rehype-pretty-code-title] + pre {
@@ -100,7 +100,7 @@ code[data-theme*=' '] span {
 		}
 
 		& [data-highlighted-line] {
-			@apply bg-neutral-300;
+			@apply bg-stone-200;
 		}
 
 		& [data-highlighted-line][data-highlighted-line-id='add'] {

@@ -20,3 +20,9 @@ This is my first post. I want to write more.
 	console.log('hello world!');
 </script>
 ```
+
+```ts showLineNumbers {2}
+function createSomethingCool() {
+	console.log('hello world!');
+}
+```
