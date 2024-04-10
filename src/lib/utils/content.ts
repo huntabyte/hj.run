@@ -3,6 +3,7 @@ import { error } from '@sveltejs/kit';
 export type ArticleFrontMatter = {
 	title: string;
 	date: string;
+	draft?: boolean;
 };
 
 export type ArticleFile = {
@@ -13,6 +14,7 @@ export type ArticleFile = {
 export type NoteFrontMatter = {
 	title: string;
 	date: string;
+	draft?: boolean;
 };
 
 export type NoteFile = {

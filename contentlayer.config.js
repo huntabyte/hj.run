@@ -32,6 +32,10 @@ export const Article = defineDocumentType(() => ({
 		date: {
 			type: 'string',
 			required: true
+		},
+		draft: {
+			type: 'boolean',
+			required: false
 		}
 	},
 	computedFields
@@ -48,6 +52,10 @@ export const Note = defineDocumentType(() => ({
 		date: {
 			type: 'string',
 			required: true
+		},
+		draft: {
+			type: 'boolean',
+			required: false
 		}
 	},
 	computedFields
