@@ -1,6 +1,5 @@
 <script lang="ts">
-	// @ts-ignore
-	import HomeContent from '../../content/index.md';
+	import HomeContent from '$content/index.md';
 </script>
 
 <section

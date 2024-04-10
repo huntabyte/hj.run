@@ -8,6 +8,9 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+	declare module '*.md' {
+		export { SvelteComponent as default } from 'svelte';
+	}
 }
 
 export {};
