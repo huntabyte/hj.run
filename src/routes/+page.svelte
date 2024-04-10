@@ -34,8 +34,7 @@
 			target="_blank"
 		>
 			video content
-		</a>
-		. I'm hoping that having this site will encourage me to share more
+		</a>. I'm hoping that having this site will encourage me to share more
 		<a href="/articles">written</a> content as well.
 	</p>
 	<p>
