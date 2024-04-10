@@ -28,3 +28,23 @@ updated: 2024-04-10
 - **Laptop**: [Apple MacBook Air (M2) 13-inch](https://www.apple.com/macbook-air/)
 - **Headphones**: [Apple AirPods Pro](https://www.apple.com/airpods-pro/)
 - **Backpack**: [Tumi Compact Laptop Brief Pack](https://www.tumi.com/p/compact-laptop-brief-pack-01172971041/)
+
+## Software
+
+### General Productivity
+
+- **Browser**: [Arc](https://arc.net/)
+- **Password Manager**: [1Password](https://1password.com/)
+- **Note-taking**: [Obsidian](https://obsidian.md/)
+- **Launcher**: [Raycast](https://raycast.com/)
+
+### VSCode Setup
+
+- **Theme**: [GitHub Dark](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
+- **Font**: [Cascadia Code](https://github.com/microsoft/cascadia-code)
+- **Extensions**: [See my VSCode setup](https://github.com/huntabyte/vscode-settings)
+
+### Development
+
+- **Terminal**: [iTerm2](https://iterm2.com/)
+- **Shell**: [Oh My Zsh](https://ohmyz.sh/)
