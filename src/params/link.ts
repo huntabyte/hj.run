@@ -1,16 +1,32 @@
 import type { ParamMatcher } from '@sveltejs/kit';
 
-export const links = ['github', 'x', 'twitter', 'youtube', 'discord', 'coffee'] as const;
+export const links = [
+	'github',
+	'x',
+	'twitter',
+	'youtube',
+	'discord',
+	'coffee',
+	'courses',
+	'sponsor',
+	'sponsors'
+] as const;
 
 type Link = (typeof links)[number];
 
+const X_URL = 'https://x.com/huntabyte';
+const SPONSORS_URL = 'https://github.com/sponsors/huntabyte';
+
 export const linkMap: Record<Link, string> = {
 	github: 'https://github.com/huntabyte',
-	x: 'https://x.com/huntabyte',
-	twitter: 'https://x.com/huntabyte',
+	x: X_URL,
+	twitter: X_URL,
 	youtube: 'https://youtube.com/@huntabyte',
 	discord: 'https://discord.gg/nkWEKjnnZz',
-	coffee: 'https://ko-fi.com/huntabyte'
+	coffee: 'https://ko-fi.com/huntabyte',
+	courses: 'https://courses.huntabyte.com',
+	sponsor: SPONSORS_URL,
+	sponsors: SPONSORS_URL
 };
 
 export function isLink(param: string): param is Link {
