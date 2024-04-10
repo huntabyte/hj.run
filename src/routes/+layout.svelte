@@ -1,9 +1,9 @@
 <script lang="ts">
-	import '$lib/styles/app.pcss';
-	import '$lib/styles/markdown.pcss';
-	import * as Icon from '$lib/icons/index.js';
 	import type { ComponentType } from 'svelte';
 	import { dev } from '$app/environment';
+	import * as Icon from '$lib/icons/index.js';
+	import '$lib/styles/app.pcss';
+	import '$lib/styles/markdown.pcss';
 
 	type Social = {
 		name: string;
@@ -30,8 +30,8 @@
 	];
 
 	const navigation = [
-		{ name: 'Projects', href: '/projects' },
-		{ name: 'Writing', href: '/posts' },
+		{ name: 'Articles', href: '/articles' },
+		{ name: 'Notes', href: '/notes' },
 		{ name: 'Uses', href: '/uses' },
 		{ name: 'Contact', href: '/contact' }
 	];
@@ -40,10 +40,10 @@
 <div class="mx-auto flex min-h-screen flex-col px-4 md:px-0">
 	<nav class="flex items-center justify-between">
 		<a href="/" class="py-6 text-xl font-bold"> HJ </a>
-		<div class="flex items-center gap-5">
+		<div class="flex items-center gap-5 text-sm uppercase tracking-wide">
 			{#if dev}
 				{#each navigation as navItem}
-					<a href={navItem.href} class="hover:text-orange-400">{navItem.name}</a>
+					<a href={navItem.href} class="font-medium text-stone-950">{navItem.name}</a>
 				{/each}
 			{/if}
 		</div>
@@ -58,7 +58,7 @@
 				<a
 					href={social.href}
 					target="_blank"
-					class="inline-flex size-8 items-center justify-center text-neutral-400 hover:text-neutral-50"
+					class="inline-flex size-8 items-center justify-center text-stone-500 hover:text-stone-700"
 				>
 					<svelte:component this={social.icon} class={social.name === 'X' ? 'size-4' : 'size-5'} />
 					<span class="sr-only">{social.name}</span>

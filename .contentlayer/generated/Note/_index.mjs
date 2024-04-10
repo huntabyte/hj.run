@@ -2,4 +2,4 @@
 
 
 
-export const allPosts = []
+export const allNotes = []

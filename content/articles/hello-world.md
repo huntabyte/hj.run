@@ -1,6 +1,7 @@
 ---
 title: Hello World
 date: 2024-03-24
+excerpt: This is the excerpt of the post, it will be shown on the post list.
 ---
 
 # Heading 1

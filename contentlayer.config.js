@@ -1,5 +1,5 @@
+import path from 'node:path';
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
-import path from 'path';
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields = {
@@ -21,9 +21,29 @@ const computedFields = {
 	}
 };
 
-export const Post = defineDocumentType(() => ({
-	name: 'Post',
-	filePathPattern: `posts/**/*.md`,
+export const Article = defineDocumentType(() => ({
+	name: 'Article',
+	filePathPattern: `articles/**/*.md`,
+	fields: {
+		title: {
+			type: 'string',
+			required: true
+		},
+		excerpt: {
+			type: 'string',
+			required: true
+		},
+		date: {
+			type: 'string',
+			required: true
+		}
+	},
+	computedFields
+}));
+
+export const Note = defineDocumentType(() => ({
+	name: 'Note',
+	filePathPattern: `notes/**/*.md`,
 	fields: {
 		title: {
 			type: 'string',
@@ -39,6 +59,6 @@ export const Post = defineDocumentType(() => ({
 
 export default makeSource({
 	contentDirPath: './content',
-	documentTypes: [Post],
+	documentTypes: [Article, Note],
 	disableImportAliasWarning: true
 });

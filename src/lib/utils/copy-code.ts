@@ -1,5 +1,5 @@
-import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
+import { browser } from '$app/environment';
 
 export function createCopyCodeButton() {
 	let codeString = '';
@@ -21,8 +21,8 @@ export function createCopyCodeButton() {
 	}
 
 	return {
-		copied: copied,
-		copyCode: copyCode,
-		setCodeString: setCodeString
+		copied,
+		copyCode,
+		setCodeString
 	};
 }

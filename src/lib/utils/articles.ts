@@ -5,16 +5,16 @@ export type FrontMatter = {
 	date: string;
 };
 
-export type PostFile = {
+export type ArticleFile = {
 	default: import('svelte').ComponentType;
 	metadata: FrontMatter;
 };
 
-export type DocResolver = () => Promise<PostFile>;
+export type DocResolver = () => Promise<ArticleFile>;
 
-type PostDoc = {
-	component: PostFile['default'];
-	metadata: PostFile['metadata'];
+type ArticleDoc = {
+	component: ArticleFile['default'];
+	metadata: ArticleFile['metadata'];
 	title: string;
 };
 
@@ -28,7 +28,6 @@ function findMatch(slug: string, modules: Modules) {
 	let match: { path?: string; resolver?: DocResolver } = {};
 
 	for (const [path, resolver] of Object.entries(modules)) {
-		console.log(slugFromPath(path));
 		if (slugFromPath(path) === slug) {
 			match = { path, resolver: resolver as unknown as DocResolver };
 			break;
@@ -54,9 +53,9 @@ function getIndexDocIfExists(slug: string, modules: Modules) {
 	return match;
 }
 
-export type ContentType = 'posts' | 'notes' | 'snippets';
+export type ContentType = 'articles' | 'notes' | 'snippets';
 
-export async function getContent(slug: string, type: ContentType): Promise<PostDoc> {
+export async function getContent(slug: string, type: ContentType): Promise<ArticleDoc> {
 	const modules = import.meta.glob(`/content/**/*.md`);
 	const match = findMatch(`${type}/${slug}`, modules);
 	const doc = await match?.resolver?.();

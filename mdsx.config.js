@@ -1,10 +1,10 @@
 //@ts-check
-import remarkGfm from 'remark-gfm';
-import rehypePrettyCode from 'rehype-pretty-code';
-import { visit } from 'unist-util-visit';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readFileSync } from 'node:fs';
+import remarkGfm from 'remark-gfm';
+import rehypePrettyCode from 'rehype-pretty-code';
+import { visit } from 'unist-util-visit';
 import { getHighlighter } from 'shiki';
 import rehypeSlug from 'rehype-slug';
 import { defineConfig } from 'mdsx';
@@ -90,7 +90,7 @@ export const mdsxConfig = defineConfig({
  * We use this to style elements within the `<figure>` differently if a `<figcaption>`
  * is present.
  *
- * @returns {HastTransformer}
+ * @returns {HastTransformer} - a unified transformer
  */
 function rehypeHandleMetadata() {
 	return async (tree) => {

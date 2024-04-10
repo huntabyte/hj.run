@@ -1,6 +1,6 @@
 // contentlayer.config.js
+import path from "node:path";
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import path from "path";
 var computedFields = {
   slug: {
     type: "string",
@@ -19,9 +19,28 @@ var computedFields = {
     resolve: (doc) => path.parse(doc._raw.sourceFilePath.split("/").slice(-1).join("/")).ext
   }
 };
-var Post = defineDocumentType(() => ({
-  name: "Post",
-  filePathPattern: `posts/**/*.md`,
+var Article = defineDocumentType(() => ({
+  name: "Article",
+  filePathPattern: `articles/**/*.md`,
+  fields: {
+    title: {
+      type: "string",
+      required: true
+    },
+    excerpt: {
+      type: "string",
+      required: true
+    },
+    date: {
+      type: "string",
+      required: true
+    }
+  },
+  computedFields
+}));
+var Note = defineDocumentType(() => ({
+  name: "Note",
+  filePathPattern: `notes/**/*.md`,
   fields: {
     title: {
       type: "string",
@@ -36,11 +55,12 @@ var Post = defineDocumentType(() => ({
 }));
 var contentlayer_config_default = makeSource({
   contentDirPath: "./content",
-  documentTypes: [Post],
+  documentTypes: [Article, Note],
   disableImportAliasWarning: true
 });
 export {
-  Post,
+  Article,
+  Note,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-B5G6YQZU.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-7JCM3N25.mjs.map

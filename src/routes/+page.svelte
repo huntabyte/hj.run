@@ -2,22 +2,14 @@
 </script>
 
 <section
-	class="prose-a:decoration prose prose-neutral prose-invert mt-4 md:prose-lg prose-a:underline prose-a:decoration-neutral-400 prose-a:underline-offset-4"
+	class="prose prose-stone mt-4 md:prose-lg prose-a:underline prose-a:decoration-stone-400 prose-a:underline-offset-4 prose-li:marker:text-stone-400"
 >
-	<h1 class="not-prose text-2xl font-medium text-neutral-50">I'm Hunter, aka Huntabyte.</h1>
+	<h1 class="not-prose text-2xl font-medium">I'm Hunter, aka Huntabyte.</h1>
 	<p>
 		I've been working professionally in tech for almost 10 years and have been passionate about it
 		for as long as I can remember.
 	</p>
-	<p>
-		I really enjoy building and maintaining open source projects for the <a
-			href="https://svelte.dev"
-			target="_blank"
-		>
-			Svelte
-		</a>
-		ecosystem.
-	</p>
+	<p>I really enjoy building and maintaining open source projects for the Svelte ecosystem.</p>
 	<p>Some of the more notable projects I've built or helped build and maintain are:</p>
 	<ul>
 		<li>
