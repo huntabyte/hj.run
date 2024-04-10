@@ -36,16 +36,16 @@
 	];
 </script>
 
-<div class="mx-auto flex min-h-screen flex-col px-4 md:px-0">
-	<nav class="flex items-center justify-between">
-		<a href="/" class="py-6 text-xl font-bold"> HJ </a>
-		<div class="flex items-center gap-5 text-sm uppercase tracking-wide">
+<div class="mx-auto flex min-h-screen flex-col">
+	<nav class="flex items-center justify-between py-6">
+		<a href="/" class="text-lg font-bold md:text-xl"> HJ </a>
+		<div class="flex items-center gap-3 text-sm uppercase tracking-wide md:gap-5">
 			{#each navigation as navItem}
 				<a href={navItem.href} class="font-semibold text-stone-950">{navItem.name}</a>
 			{/each}
 		</div>
 	</nav>
-	<main class="py-10">
+	<main class="py-6 md:py-10">
 		<slot />
 	</main>
 	<footer class="mx-auto mt-auto flex w-full items-center justify-between py-4">
@@ -53,7 +53,7 @@
 			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="font-medium">
 				CC BY-NC-SA 4.0
 			</a>
-			<span>&nbsp;© 2024 - PRESENT Hunter Johnston</span>
+			<span>&nbsp;© 2024 Hunter Johnston</span>
 		</div>
 		<div class="flex items-center gap-1">
 			{#each socials as social}
