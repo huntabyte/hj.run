@@ -83,7 +83,7 @@ Here's an example of how that `<Button>` might look under the hood:
 	export let className: string | undefined = undefined;
 </script>
 
-<button class={twMerge('h-5 bg-red-200 px-2 py-1 text-sm text-black', className)}>
+<button class={twMerge('h-5 bg-red-200 p-2 text-sm text-black', className)}>
 	<slot />
 </button>
 ```

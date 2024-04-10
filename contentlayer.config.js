@@ -53,6 +53,25 @@ export const Note = defineDocumentType(() => ({
 	computedFields
 }));
 
+export const Use = defineDocumentType(() => ({
+	name: 'Use',
+	filePathPattern: `uses.md`,
+	fields: {
+		title: {
+			type: 'string',
+			required: true
+		},
+		subtitle: {
+			type: 'string',
+			required: true
+		},
+		updated: {
+			type: 'string',
+			required: true
+		}
+	}
+}));
+
 export default makeSource({
 	contentDirPath: './content',
 	documentTypes: [Article, Note],

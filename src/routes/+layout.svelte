@@ -49,7 +49,12 @@
 		<slot />
 	</main>
 	<footer class="mx-auto mt-auto flex w-full items-center justify-between py-4">
-		<span class="text-xs">Copyright © 2024 Hunter Johnston</span>
+		<div class="flex items-center text-xs">
+			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="font-medium">
+				CC BY-NC-SA 4.0
+			</a>
+			<span>&nbsp;© 2024 - PRESENT Hunter Johnston</span>
+		</div>
 		<div class="flex items-center gap-1">
 			{#each socials as social}
 				<a
