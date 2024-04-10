@@ -3,7 +3,7 @@ title: Tailwind Wins the Component Era
 date: 2024-04-09
 ---
 
-Ah, [TailwindCSS](https://tailwindcss.com) - the most controversial CSS framework of the decade for reasons unknown to me. I've never passionately hated something I didn't have to use. I just looked at the thing and thought, "Huh, that's interesting but not for me," and moved on like a normal person. But I digress. Let's talk about why Tailwind is winning the component era and why you should give it a shot if you're on the fence about it.
+Ah, [TailwindCSS](https://tailwindcss.com) - the most controversial CSS framework of the decade for reasons unknown to me. I've never passionately hated something I didn't have to use. I just looked at the thing and thought, "Huh, that's interesting but not for me," and moved on like a normal person. But I digress. Let's talk about one of the reasons Tailwind is winning the component era and why you should give it a shot if you're on the fence about it.
 
 ## Shortcomings of Scoped Styles
 
