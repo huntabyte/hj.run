@@ -29,6 +29,8 @@ updated: 2024-04-10
 - **Headphones**: [Apple AirPods Pro](https://www.apple.com/airpods-pro/)
 - **Backpack**: [Tumi Compact Laptop Brief Pack](https://www.tumi.com/p/compact-laptop-brief-pack-01172971041/)
 
+<hr>
+
 ## Software
 
 ### General Productivity
@@ -48,3 +50,7 @@ updated: 2024-04-10
 
 - **Terminal**: [iTerm2](https://iterm2.com/)
 - **Shell**: [Oh My Zsh](https://ohmyz.sh/)
+
+### Design
+
+- **Design Tool**: [Figma](https://www.figma.com/)
