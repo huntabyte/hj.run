@@ -5,11 +5,16 @@
 <div class="flex items-center justify-center">
 	<ul class="flex w-full max-w-xl flex-col gap-5">
 		{#each content as { title, slugFull, date }}
-			<li class="flex w-full items-center gap-4 md:gap-12">
-				<a class="text-left font-medium" href={slugFull}>
-					{title}
+			<li>
+				<a class="flex w-full items-center gap-4 text-left font-medium md:gap-12" href={slugFull}>
+					<span class="text-left font-medium">
+						{title}
+					</span>
+					<span class="ml-auto w-[110px] shrink-0 border text-sm text-stone-600/85">
+						<span class="sr-only">Published on:</span>
+						{date}
+					</span>
 				</a>
-				<span class="ml-auto w-[110px] shrink-0 border text-sm text-stone-600/85">{date}</span>
 			</li>
 		{/each}
 	</ul>
