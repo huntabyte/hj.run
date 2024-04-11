@@ -77,11 +77,32 @@ export const Use = defineDocumentType(() => ({
 			type: 'string',
 			required: true
 		}
-	}
+	},
+	computedFields
+}));
+
+export const Find = defineDocumentType(() => ({
+	name: 'Find',
+	filePathPattern: `finds/**/*.md`,
+	fields: {
+		title: {
+			type: 'string',
+			required: true
+		},
+		date: {
+			type: 'string',
+			required: true
+		},
+		draft: {
+			type: 'boolean',
+			required: false
+		}
+	},
+	computedFields
 }));
 
 export default makeSource({
 	contentDirPath: './content',
-	documentTypes: [Article, Note],
+	documentTypes: [Article, Note, Find, Use],
 	disableImportAliasWarning: true
 });

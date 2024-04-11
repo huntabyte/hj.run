@@ -33,9 +33,21 @@ export type UseFile = {
 	metadata: UseFrontMatter;
 };
 
+export type FindFrontMatter = {
+	title: string;
+	date: string;
+	draft?: boolean;
+};
+
+export type FindFile = {
+	default: import('svelte').ComponentType;
+	metadata: FindFrontMatter;
+};
+
 export type ArticleResolver = () => Promise<ArticleFile>;
 export type NoteResolver = () => Promise<NoteFile>;
 export type UseResolver = () => Promise<UseFile>;
+export type FindResolver = () => Promise<FindFile>;
 
 type ArticleDoc = {
 	component: ArticleFile['default'];
@@ -52,6 +64,12 @@ type NoteDoc = {
 type UseDoc = {
 	component: UseFile['default'];
 	metadata: UseFile['metadata'];
+	title: string;
+};
+
+type FindDoc = {
+	component: FindFile['default'];
+	metadata: FindFile['metadata'];
 	title: string;
 };
 
@@ -123,6 +141,20 @@ export async function getNote(slug: string): Promise<NoteDoc> {
 export async function getUse(): Promise<UseDoc> {
 	const modules = import.meta.glob(`/content/uses/**/*.md`);
 	const match = findMatch<UseResolver>(`uses/index`, modules);
+	const doc = await match?.resolver?.();
+
+	if (!doc || !doc.metadata) error(404);
+
+	return {
+		component: doc.default,
+		metadata: doc.metadata,
+		title: doc.metadata.title
+	};
+}
+
+export async function getFind(slug: string): Promise<FindDoc> {
+	const modules = import.meta.glob(`/content/finds/**/*.md`);
+	const match = findMatch<FindResolver>(`finds/${slug}`, modules);
 	const doc = await match?.resolver?.();
 
 	if (!doc || !doc.metadata) error(404);
