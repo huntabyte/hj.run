@@ -40,6 +40,7 @@ updated: 2024-04-10
 - [Obsidian](https://obsidian.md/) - Time and time again I've tried Notion, but my ADHD brain can't handle it. I spend too much time trying to make things look pretty and not enough time actually using it. Obsidian is the perfect balance of functionality and simplicity for me.
 - [Raycast](https://raycast.com/) - Could not imagine using my Mac without Raycast. It's a launcher, but so much more. I use it to quickly open apps, calculate, clipboard history, and more. It's a must-have.
 - **Browser Extensions**:
+  - [Refined GitHub](https://github.com/refined-github/refined-github) - I use this to make GitHub better. It adds a bunch of features and tweaks that I can't live without. Sometimes when I'm on a browser without this extension, I think GitHub is broken.
   - [Dark Reader](https://darkreader.org/) - I use this to make sites that are too bright easier on my eyes.
   - [File Icons for GitHub & GitLab](https://chromewebstore.google.com/detail/file-icons-for-github-and/ficfmibkjjnpogdcfhfokmihanoldbfe) - I only recently discovered this extension and I love it. It adds file icons to GitHub and GitLab replacing the generic file icons.
   - [CLS Visualizer](https://chromewebstore.google.com/detail/cls-visualizer/jbbeihojggidiclbcneckhcblilapahn) - I use this to check the Cumulative Layout Shift (CLS) of the sites/apps I'm working on.
