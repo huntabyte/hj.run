@@ -5,9 +5,9 @@ date: 2024-04-10
 
 Icons really set the vibe. Compare these two screenshots:
 
-![Without GitHub File Icons](/content/finds/without-icons.png)
+![Without GitHub File Icons](/images/github-without-icons.png)
 
-![GitHub File Icons](/content/finds/with-icons.png)
+![GitHub File Icons](/images/github-with-icons.png)
 
 Which one of these passes the vibe check?
 
