@@ -12,9 +12,9 @@
 		<slot />
 	</main>
 	<footer class="mx-auto mt-auto flex w-full items-center justify-between py-4">
-		<div class="flex items-center text-xs">
+		<div class="flex items-center text-xs tracking-tighter">
 			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="font-medium">
-				CC BY-NC-SA 4.0
+				CC BY-NC 4.0
 			</a>
 			<span>&nbsp;© 2024 Hunter Johnston</span>
 		</div>
