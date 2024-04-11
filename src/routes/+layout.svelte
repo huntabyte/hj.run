@@ -1,54 +1,13 @@
 <script lang="ts">
-	import type { ComponentType } from 'svelte';
-	import * as Icon from '$lib/icons/index.js';
 	import '$lib/styles/app.pcss';
 	import '$lib/styles/markdown.pcss';
-	import { Metadata } from '$lib/components';
-
-	type Social = {
-		name: string;
-		href: string;
-		icon: ComponentType;
-	};
-
-	const socials: Social[] = [
-		{
-			name: 'GitHub',
-			href: 'https://github.com/huntabyte',
-			icon: Icon.GitHub
-		},
-		{
-			name: 'X',
-			href: 'https://x.com/huntabyte',
-			icon: Icon.X
-		},
-		{
-			name: 'YouTube',
-			href: 'https://youtube.com/@huntabyte',
-			icon: Icon.YouTube
-		}
-	];
-
-	const navigation = [
-		{ name: 'Articles', href: '/articles' },
-		{ name: 'Notes', href: '/notes' },
-		{ name: 'Finds', href: '/finds' },
-		{ name: 'Uses', href: '/uses' },
-		{ name: 'Contact', href: '/contact' }
-	];
+	import { Metadata, Navigation, SocialItems } from '$lib/components';
 </script>
 
 <Metadata />
 
 <div class="mx-auto flex min-h-screen flex-col">
-	<nav class="flex items-center justify-between py-6">
-		<a href="/" class="text-lg font-bold md:text-xl"> HJ </a>
-		<div class="flex items-center gap-3 text-sm uppercase tracking-wide md:gap-5">
-			{#each navigation as navItem}
-				<a href={navItem.href} class="font-semibold text-stone-950">{navItem.name}</a>
-			{/each}
-		</div>
-	</nav>
+	<Navigation />
 	<main class="py-6 md:py-10">
 		<slot />
 	</main>
@@ -59,17 +18,6 @@
 			</a>
 			<span>&nbsp;© 2024 Hunter Johnston</span>
 		</div>
-		<div class="flex items-center gap-1">
-			{#each socials as social}
-				<a
-					href={social.href}
-					target="_blank"
-					class="inline-flex size-8 items-center justify-center text-stone-500 hover:text-stone-700"
-				>
-					<svelte:component this={social.icon} class={social.name === 'X' ? 'size-4' : 'size-5'} />
-					<span class="sr-only">{social.name}</span>
-				</a>
-			{/each}
-		</div>
+		<SocialItems />
 	</footer>
 </div>
