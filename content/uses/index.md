@@ -64,7 +64,7 @@ updated: 2024-04-10
 
 ### Design
 
-- [Figma](https://www.figma.com/) - I recently unindoctrinated myself from the Adobe regime and use Figma for just about everything design-related - thumbnails, logos, wireframes, mockups, etc.
+- [Figma](https://www.figma.com/) - I use Figma for just about everything design-related - thumbnails, logos, wireframes, mockups, etc.
 
 ### Video/Streaming
 
