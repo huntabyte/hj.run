@@ -9,7 +9,8 @@ export const links = [
 	'coffee',
 	'courses',
 	'sponsor',
-	'sponsors'
+	'sponsors',
+	'modern-saas'
 ] as const;
 
 type Link = (typeof links)[number];
@@ -25,6 +26,7 @@ export const linkMap: Record<Link, string> = {
 	discord: 'https://discord.gg/nkWEKjnnZz',
 	coffee: 'https://ko-fi.com/huntabyte',
 	courses: 'https://courses.huntabyte.com',
+	'modern-saas': 'https://courses.huntabyte.com/modern-saas',
 	sponsor: SPONSORS_URL,
 	sponsors: SPONSORS_URL
 };
