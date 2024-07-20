@@ -13,3 +13,5 @@ Some of the more notable projects I've built or helped build and maintain are:
 I also gain fulfillment in sharing what I learn with others, mostly in the form of [video content](https://youtube.com/@huntabyte). I'm hoping that having this site will encourage me to share more [written](/articles) content as well.
 
 When I'm not doing things on the internet, I enjoy spending time with my beautiful fiancé and our two dogs. We love trying out new breakfast spots, especially if they have good brew (coffee).
+
+![Hunter and his fiance](/images/me-and-p.jpg)

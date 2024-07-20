@@ -1,5 +1,5 @@
 <script context="module">
-	export { pre, img } from './index.js';
+	export { pre, img, a } from './index.js';
 </script>
 
 <script lang="ts">

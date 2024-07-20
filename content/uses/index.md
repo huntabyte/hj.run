@@ -56,6 +56,7 @@ updated: 2024-04-10
   - [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file) - This extension makes it faster to create new files anywhere in the project. I remapped `cmd+n` to open this instead of the default new file dialog (which sucks).
   - [Batch Rename](https://marketplace.visualstudio.com/items?itemName=JannisX11.batch-rename-extension) - I use this to rename files in bulk. I don't use it often, but when I do, I'm glad I have it.
   - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) - I don't do any of the chat or fancy stuff with Copilot. I strictly use it to do monotinous, repetitive tasks that require no thought. It's great for that.
+- **Settings/Keybindings**: You can find my VSCode settings and keybindings [here](https://github.com/huntabyte/vscode-settings).
 
 ### Development
 
