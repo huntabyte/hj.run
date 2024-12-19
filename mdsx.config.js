@@ -22,18 +22,7 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
  * @type {import('rehype-pretty-code').Options}
  */
 const prettyCodeOptions = {
-	theme: {
-		dark: JSON.parse(
-			readFileSync(resolve(__dirname, './src/lib/styles/themes/tokyo-night-storm.json'), {
-				encoding: 'utf8'
-			})
-		),
-		light: JSON.parse(
-			readFileSync(resolve(__dirname, './src/lib/styles/themes/tokyo-night-light.json'), {
-				encoding: 'utf8'
-			})
-		)
-	},
+	theme: "github-light",
 	getHighlighter: (options) =>
 		getHighlighter({
 			...options,
