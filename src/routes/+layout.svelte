@@ -16,7 +16,7 @@
 			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="font-medium">
 				CC BY-NC 4.0
 			</a>
-			<span>&nbsp;© 2024 Hunter Johnston</span>
+			<span>&nbsp;© {new Date().getFullYear()} Hunter Johnston</span>
 		</div>
 		<SocialItems />
 	</footer>
